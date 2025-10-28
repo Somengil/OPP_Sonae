@@ -3,12 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <title>Relatório Power BI</title>
+<!-- Meta tag para responsividade em mobile -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
-  html, body { margin:0; padding:0; height:100%; }
-  iframe { width:100%; height:100%; border:0; }
+  /* Remove margens e padding da página */
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* remove scrollbars */
+    background-color: #ffffff; /* cor de fundo opcional */
+  }
+
+  /* Iframe ocupa 100% da tela */
+  iframe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;  /* viewport width */
+    height: 100vh; /* viewport height */
+    border: 0;
+  }
 </style>
 </head>
 <body>
-<iframe src="https://app.powerbi.com/view?r=eyJrIjoiYTA1MDY0YmItMWVmYi00YTBkLWFlMDgtM2E1NWU3OTc2NmRlIiwidCI6IjNjODNkYWY2LWEzZmUtNDhlYy1hZDA2LWZiNTRhNTI2NGVjMSIsImMiOjl9&navContentPaneEnabled=false" allowFullScreen="true"></iframe>
+  <iframe 
+      src="https://app.powerbi.com/view?r=eyJrIjoiYTA1MDY0YmItMWVmYi00YTBkLWFlMDgtM2E1NWU3OTc2NmRlIiwidCI6IjNjODNkYWY2LWEzZmUtNDhlYy1hZDA2LWZiNTRhNTI2NGVjMSIsImMiOjl9&navContentPaneEnabled=false" 
+      allowFullScreen="true">
+  </iframe>
 </body>
 </html>
